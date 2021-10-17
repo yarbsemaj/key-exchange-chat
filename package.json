@@ -1,0 +1,52 @@
+{
+  "name": "svelte-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "watch:tailwind": "postcss public/tailwind.css -o public/index.css -w",
+    "build:tailwind": "cross-env NODE_ENV=production postcss public/tailwind.css -o public/index.css",
+    "build": "npm run build:tailwind && rollup -c",
+    "start": "sirv public",
+    "serve": "serve public -p 80",
+    "dev": "HOST=0.0.0.0 concurrently \"rollup -c -w\" \"npm run watch:tailwind\""
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "@rollup/plugin-typescript": "^8.0.0",
+    "@tsconfig/svelte": "^2.0.0",
+    "autoprefixer": "^9.8.8",
+    "concurrently": "^6.3.0",
+    "cross-env": "^7.0.3",
+    "postcss-cli": "^7.1.2",
+    "rollup": "^2.3.4",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-node-polyfills": "^0.2.1",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "svelte": "^3.0.0",
+    "svelte-check": "^2.0.0",
+    "svelte-preprocess": "^4.0.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
+    "tslib": "^2.0.0",
+    "typescript": "^4.0.0"
+  },
+  "dependencies": {
+    "@rollup/plugin-replace": "^3.0.0",
+    "crypto-es": "^1.2.7",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^10.0.0",
+    "js-crypto-rsa": "^1.0.2",
+    "jsencrypt": "^3.2.1",
+    "jsrsasign": "^10.4.1",
+    "jsrsasign-util": "^1.0.5",
+    "keypair": "^1.0.4",
+    "random-bigint": "0.0.1",
+    "random-prime": "^2.0.0",
+    "randombytes": "^2.1.0",
+    "sirv-cli": "^1.0.0",
+    "uuid": "^8.3.2"
+  }
+}
