@@ -1,6 +1,6 @@
 # Secure Web Chat
 
-###### An implementation of an (RSA)[https://en.wikipedia.org/wiki/RSA_(cryptosystem)] signed (diffy helman)[https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange] 
+###### An implementation of an [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) signed [diffy helman](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange)
 
 ![Image of Secure Web Chat](https://user-images.githubusercontent.com/17494632/137641389-51add67c-ab20-49f0-a04b-4ca2af7d0d64.png)
 
